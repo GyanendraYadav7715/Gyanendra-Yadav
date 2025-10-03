@@ -1,45 +1,56 @@
 ---
-title: "Building Once UI, a Customizable Design System"
-publishedAt: "2024-04-08"
-summary: "Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration."
+title: "Comprig – Cloud Platform for Browser-based VM Access"
+publishedAt: "2025-08-01"
+summary: "Building a cloud platform that allows users to create, manage, and access Ubuntu/Windows virtual machines entirely from the browser, with automated provisioning, billing, and secure access through Apache Guacamole and Wetty."
 images:
-  - "/images/projects/project-01/cover-01.jpg"
-  - "/images/projects/project-01/cover-02.jpg"
-  - "/images/projects/project-01/cover-03.jpg"
-  - "/images/projects/project-01/cover-04.jpg"
+  - "/images/projects/comprig/cover01.png"
+  - "/images/projects/comprig/dashboard.png"
 team:
-  - name: "Selene Yu"
-    role: "Software Engineer"
+  - name: "Gyanendra Yadav"
+    role: "Full-Stack Developer"
     avatar: "/images/avatar.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
-  - name: "Jane Smith"
-    role: "Product Manager"
-    avatar: "/images/projects/project-01/avatar-01.jpg"
-    linkedIn: "https://www.linkedin.com/company/once-ui/"
+    linkedIn: "https://www.linkedin.com/in/gyanendrayadav"
+link: "https://comprig.com/"
 ---
 
 ## Overview
 
-Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+Comprig is a cloud platform I built to simplify how users interact with virtual machines. Instead of relying on local clients like RDP or SSH, Comprig enables users to create, start, stop, and access **Ubuntu and Windows VMs directly in the browser**.  
+
+The platform integrates **Terraform, AWS EC2, Apache Guacamole, and Wetty** to fully automate VM provisioning, connection management, and billing. With a clean React frontend and a Node.js + MongoDB backend, Comprig is designed to be scalable and user-friendly, catering to developers, teams, and enterprises looking for seamless cloud computing access.
 
 ## Key Features
 
-- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
-- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
-- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
-- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+- **Automated VM Provisioning**: Users can create Ubuntu or Windows EC2 instances through the web interface. Terraform scripts handle the infrastructure setup while Node.js manages orchestration.
+- **Browser-based Access**: 
+  - Windows VMs accessible via **Apache Guacamole** (RDP in-browser).
+  - Ubuntu VMs accessible via **Wetty** (SSH terminal in-browser).
+- **User Dashboard**: Displays created instances, usage time, and billing details. Includes controls for starting/stopping machines.
+- **Billing System**: Tracks VM usage and charges based on runtime. Future expansion includes team billing and shared VM access.
+- **Security & Authentication**: JWT-based user authentication and automated Guacamole integration ensure secure VM connections.
+- **Scalability**: Modular design with Terraform and prebuilt AMIs makes it easy to extend to other cloud providers like GCP and Azure.
 
 ## Technologies Used
 
-- **Next.js**: For fast, server-rendered React applications.
-- **Figma**: For creating and managing design assets and prototypes.
-- **Styled-Components**: For styling React components with a modular, themable approach.
-- **Storybook**: For building an interactive, documented component library.
+- **Frontend**: React, TypeScript, React Query, Tailwind CSS, Zustand  
+- **Backend**: Node.js (Express), MongoDB, JWT Authentication  
+- **Infrastructure**: Terraform, AWS EC2, S3, VPC, Security Groups  
+- **Remote Access**: Apache Guacamole (Windows GUI), Wetty (Linux CLI)  
+- **Deployment & Automation**: Docker, CI/CD Pipelines  
 
 ## Challenges and Learnings
 
-One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+- **Guacamole Automation**: Automating user and connection creation in Apache Guacamole required deep integration with its REST API.  
+- **VM Lifecycle Management**: Ensuring Terraform, backend, and frontend stayed in sync for start/stop/delete events.  
+- **Billing Accuracy**: Designing a billing system tied to actual VM runtime demanded precise tracking and robust error handling.  
+- **Scalability**: Planning for thousands of users required careful decisions on database schema, API efficiency, and caching.  
 
 ## Outcome
 
-The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
+Comprig successfully delivers a **cloud-native, browser-based VM platform**. It bridges the gap between developers and cloud infrastructure by removing the need for external clients.  
+
+Users can now spin up a VM in seconds and access it securely in their browser. The project demonstrates expertise in **cloud automation, full-stack development, and scalable architecture design**.
+
+---
+
+This project highlights your **ability to build real-world SaaS products**, combining **infrastructure automation (Terraform)** with **full-stack engineering (React + Node.js)** to deliver a professional-grade platform.
