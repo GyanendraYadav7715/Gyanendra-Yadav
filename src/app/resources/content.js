@@ -1,16 +1,16 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Gyanendra",
+  lastName: "Yadav",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Web Developer",
+  avatar: "/images/avatar.jpeg",
+  email: "codeaura108@gmail.com",
+  location: "Asia/Kolkata",// Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,17 +30,17 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/GyanendraYadav7715",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/gyanendra-yadav-059725253/",
   },
   {
     name: "X",
     icon: "x",
-    link: "",
+    link: "https://x.com/Gyan09335978",
   },
   {
     name: "Email",
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }} />, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -90,9 +90,7 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Highly accomplished Full Stack Developer with a strong focus on delivering results. Proven expertise in the end-to-end design, development, and deployment of scalable web applications. Proficient in the MERN stack (MongoDB, Express.js, React.js, Node.js) and TypeScript, with additional skills in building robust microservices using Java and Spring Boot. Possesses a solid background in problem-solving and algorithms, consistently providing high-quality solutions for intricate business challenges.
       </>
     ),
   },
@@ -101,9 +99,9 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Startupway24",
+        timeframe: "2023 - Present",
+        role: " Mid-Senior Web Developer",
         achievements: [
           <>
             Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
@@ -117,29 +115,14 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/startup.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
           },
         ],
       },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
-      },
+
     ],
   },
   studies: {
@@ -147,53 +130,166 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Indira Gandhi National Open University",
+        description: <>Studied Bachelor of Computer Applications(BCA).</>,
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Frontend",
+        description: (
+          <>React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3,
+            Tailwind CSS, Material-UI, Redux, React Query, Zustand.</>
+        ),
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/html.jpg",
             alt: "Project image",
-            width: 16,
-            height: 9,
+            width: 3,
+            height: 3,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/project-01/css.jpg",
             alt: "Project image",
-            width: 16,
-            height: 9,
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/js.jpg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/tailwind.jpeg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/react.jpeg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          
+        ],
+      },
+      {
+        title: "Backend",
+        description: (
+          <>Node.js (Express.js, TypeScript, REST APIs, Middleware, JWT Authentication)</>
+        ),
+        images: [
+          {
+            src: "/images/projects/project-01/nodejs.jpg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/ts.jpeg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
           },
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
+        title: "Java",
+        description: (
+          <>Spring Boot, Microservices, REST APIs, Hibernate</>
+        ),
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/project-01/spring.jpg",
             alt: "Project image",
-            width: 16,
-            height: 9,
+            width: 3,
+            height: 3,
+          },
+        ],
+      },
+      {
+        title: "Databases",
+        description: (
+          <>MongoDB, PostgreSQL, MySQL, SQL</>
+        ),
+        images: [
+          {
+            src: "/images/projects/project-01/mongo.jpeg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/mysql.webp",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+        ],
+      },
+      {
+        title: "DevOps & Tools",
+        description: (
+          <>Git, GitHub, CI/CD, Vercel, Docker (Basic), AWS (EC2, S3 - Basic)</>
+        ),
+        images: [
+          {
+            src: "/images/projects/project-01/git.jpeg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/github.webp",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/aws.jpg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/docker.webp",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+        ],
+      },
+      {
+        title: "Core Concepts",
+        description: (
+          <>Data Structures & Algorithms, Object-Oriented Programming (OOP),
+            Microservice Architecture, Monolithic Architecture, System Design</>
+        ),
+        images: [
+          {
+            src: "/images/projects/project-01/dsa.webp",
+            alt: "Project image",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/project-01/network.jpg",
+            alt: "Project image",
+            width: 3,
+            height: 3,
           },
         ],
       },
     ],
   },
+
 };
 
 const blog = {
