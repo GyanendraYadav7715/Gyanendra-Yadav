@@ -89,7 +89,7 @@ export default function About() {
             flex={3}
             horizontal="center"
           >
-            <Avatar src={person.avatar} size="xl"/>
+            <Avatar src={person.avatar} size="xl" />
             <Flex gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
               {person.location}
@@ -113,7 +113,7 @@ export default function About() {
             vertical="center"
             marginBottom="32"
           >
-            {about.calendar.display && (
+            {/* {about.calendar.display && (
               <Flex
                 fitWidth
                 border="brand-alpha-medium"
@@ -141,7 +141,7 @@ export default function About() {
                   icon="chevronRight"
                 />
               </Flex>
-            )}
+            )} */}
             <Heading className={styles.textAlign} variant="display-strong-xl">
               {person.name}
             </Heading>
@@ -187,9 +187,9 @@ export default function About() {
                       </React.Fragment>
                     )
                 )}
-                {/* 🚀 Resume Download Button */}
+
                 <Button
-                  href="/resume.pdf" // file in /public folder
+                  href="/resume.pdf"
                   label="Download Resume"
                   size="s"
                   variant="secondary"

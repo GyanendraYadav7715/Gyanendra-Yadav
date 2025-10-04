@@ -94,36 +94,48 @@ const about = {
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
         company: "Startupway24",
         timeframe: "2023 - Present",
-        role: " Mid-Senior Web Developer",
+        role: "Mid-Senior Full Stack & Cloud Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed and developed a <b>cloud automation platform</b> that provisions and manages
+            AWS EC2 instances using <b>Terraform, Node.js, and MongoDB</b>, allowing users to
+            launch, monitor, and access virtual machines directly from the browser.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Integrated <b>Apache Guacamole</b> and <b>Wetty</b> for browser-based Windows and
+            Ubuntu access, enabling seamless RDP and SSH sessions without third-party clients.
+          </>,
+          <>
+            Built the <b>Comprig platform</b> frontend using <b>React, TypeScript, and React Query</b>
+            with a modern UI, real-time state management, and optimized API communication.
+          </>,
+          <>
+            Automated backend workflows including <b>user management, billing, and instance tracking</b>
+            using Express.js and MongoDB aggregation pipelines.
+          </>,
+          <>
+            Enhanced system reliability and scalability through <b>Terraform automation, pre-built AMIs,</b>
+            and <b>SSM post-launch scripts</b> to configure services instantly after VM creation.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/startup.jpg",
-            alt: "Once UI Project",
+            alt: "Startupway24 Cloud Platform",
             width: 16,
             height: 9,
           },
         ],
       },
-
     ],
   },
+
   studies: {
     display: true, // set to false to hide this section
     title: "Studies",
