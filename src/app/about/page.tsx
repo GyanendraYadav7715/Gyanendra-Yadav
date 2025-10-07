@@ -189,7 +189,7 @@ export default function About() {
                 )}
 
                 <Button
-                  href="/resume.pdf"
+                  href="/GYANENDRA YADAV.pdf"
                   label="Download Resume"
                   size="s"
                   variant="secondary"
